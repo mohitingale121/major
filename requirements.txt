@@ -44,7 +44,7 @@ termcolor==2.2.0
 typing_extensions==4.5.0
 tzdata==2024.2
 urllib3==1.26.14
-Werkzeug==2.2.3  # Compatible with Flask 2.x and Python 3.11
+Werkzeug==2.3.7  # Compatible with Flask 2.x and Python 3.11
 wheel==0.37.1
 wrapt==1.14.1
 zope.interface==5.4.0
