@@ -31,7 +31,7 @@ pandas==2.2.3  # Latest stable version compatible with Python 3.11
 pillow==9.4.0  # Compatible with Python 3.11
 protobuf==5.28.0
 Pygments==2.18.0
-python-dateutil==2.9.1
+python-dateutil==2.9.0
 pytz==2024.2  # Latest stable version
 requests==2.28.0
 rich==13.9.4
