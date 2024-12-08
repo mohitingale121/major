@@ -48,5 +48,5 @@ Werkzeug==2.2.3  # Compatible with Flask 2.x and Python 3.11
 wheel==0.37.1
 wrapt==1.14.1
 zope.interface==5.4.0
-pymongo==4.3.0  # Compatible with MongoDB for Python 3.11
+pymongo==4.3.2 # Compatible with MongoDB for Python 3.11
 python-dotenv==1.0.0  # For environment variable management
