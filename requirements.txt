@@ -7,7 +7,7 @@ click==8.1.7
 colorama==0.4.6
 DateTime==5.5
 Flask==2.3.3  # Compatible with Python 3.11
-flatbuffers==22.12.6
+flatbuffers==24.3.25
 gast==0.6.0
 google-pasta==0.2.0
 grpcio==1.51.0  # Compatible with TensorFlow 2.18.0 for Python 3.11
