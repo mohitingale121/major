@@ -1,3 +1,4 @@
+import os
 from flask import Flask, render_template, request, jsonify, redirect, url_for, session
 from pymongo import MongoClient
 from urllib.parse import quote_plus
@@ -8,19 +9,23 @@ import os
 import pandas as pd
 from datetime import datetime
 import time
+from dotenv import load_dotenv
+
+# Load environment variables from .env file
+load_dotenv()
 
 # Flask app initialization
 app = Flask(__name__)
-app.secret_key = 'your_secret_key'
+app.secret_key = os.getenv('SECRET_KEY', 'defaultsecretkey')  # Get the secret key from environment variables
 
 # MongoDB connection setup
-username = "mohitdb"  # Replace with your MongoDB username
-password = "mohitdb"  # Replace with your MongoDB password
+username = os.getenv("MONGO_USERNAME")  # MongoDB username from environment variable
+password = os.getenv("MONGO_PASSWORD")  # MongoDB password from environment variable
 encoded_username = quote_plus(username)
 encoded_password = quote_plus(password)
 
-# MongoDB URI and client
-MONGO_URI = f"mongodb+srv://{encoded_username}:{encoded_password}@cluster.hfyt1.mongodb.net/plant_disease_db?retryWrites=true&w=majority"
+# MongoDB URI and client (use environment variable for Mongo URI)
+MONGO_URI = os.getenv('MONGO_URI')
 
 # Initialize MongoDB client and database connection
 client = None
