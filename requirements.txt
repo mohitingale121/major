@@ -23,7 +23,7 @@ markdown-it-py==3.0.0
 MarkupSafe==2.1.1
 mdurl==0.1.2
 ml-dtypes==0.4.1
-numpy==1.23.0  # Compatible with TensorFlow 2.18.0 and Python 3.11
+numpy==1.23.3  # Compatible with TensorFlow 2.18.0 and Python 3.11
 opt_einsum==3.3.0
 optree==0.13.0
 packaging==24.2
